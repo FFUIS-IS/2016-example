@@ -1,0 +1,10 @@
+c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.exe.config
+c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.exe
+c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\bin\Debug\CoffeeShop.pdb
+c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csprojResolveAssemblyReference.cache
+c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.Properties.Resources.resources
+c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.GenerateResource.Cache
+c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.exe
+c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
+c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.Form1.resources
+C:\Users\Korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\bin\Debug\System.Data.SqlServerCe.dll
