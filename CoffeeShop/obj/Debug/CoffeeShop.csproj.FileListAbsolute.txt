@@ -8,3 +8,5 @@ c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\ob
 c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
 c:\users\korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.Form1.resources
 C:\Users\Korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.RegisterForm.resources
+C:\Users\Korisnik\documents\visual studio 2015\Projects\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.LoginForm.resources

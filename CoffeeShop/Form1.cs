@@ -16,18 +16,47 @@ namespace CoffeeShop
 {
     public partial class Form1 : Form
     {
+        List<Item> items;
+
         public Form1()
         {
             InitializeComponent();
 
-            Item tea = ItemRepository.GetById(1);
+            loadItems();
+        }
 
-            itemsDataGridView.Rows.Add(new object[] { tea.Id, tea.Name, tea.Price });
+        private void loadItems()
+        {
+            items = ItemRepository.GetAll();
+
+            itemsDataGridView.Rows.Clear();
+
+            foreach (Item item in items)
+            {
+                itemsDataGridView.Rows.Add(new object[] { item.Id, item.Name, item.Price });
+            }
         }
 
         private void citizenDataGridView_UserAddedRow(object sender, DataGridViewRowEventArgs e)
         {
             Console.WriteLine(e.Row.Cells[0]);
+        }
+
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            loadItems();
+        }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.ShowDialog();
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
         }
     }
 }

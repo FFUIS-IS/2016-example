@@ -10,11 +10,13 @@ namespace CoffeeShop.Repos
 {
     class ItemRepository
     {
+        private static SqlCeConnection connection = DbConnection.Instance.Connection;
+
         public static Item GetById(int id)
         {
-            SqlCeConnection connection = DbConnection.Instance.Connection;
+            string sql = "SELECT * FROM Items WHERE id = " + id;
 
-            SqlCeCommand command = new SqlCeCommand("SELECT * FROM Items WHERE id = " + id, connection);
+            SqlCeCommand command = new SqlCeCommand(sql, connection);
             SqlCeDataReader reader = command.ExecuteReader();
 
             reader.Read();
@@ -24,6 +26,41 @@ namespace CoffeeShop.Repos
             reader.Close();
 
             return result;
+        }
+
+        public static List<Item> GetAll()
+        {
+            string sql = "SELECT * FROM Items";
+
+            SqlCeCommand command = new SqlCeCommand(sql, connection);
+            SqlCeDataReader reader = command.ExecuteReader();
+
+            List<Item> items = new List<Item>();
+
+            while (reader.Read())
+            {
+                items.Add(new Item((int)reader["Id"], (string)reader["Name"], Convert.ToDouble(reader["Price"])));
+            }
+
+            reader.Close();
+
+            return items;
+        }
+
+        public static void Update(Item item)
+        {
+            string sql = "UPDATE items SET name = '" + item.Name + "', price = " + item.Price + " WHERE id = " + item.Id;
+
+            SqlCeCommand command = new SqlCeCommand(sql, connection);
+            command.ExecuteReader();
+        }
+
+        public static void Delete(Item item)
+        {
+            string sql = "DELETE FROM items WHERE id = " + item.Id;
+
+            SqlCeCommand command = new SqlCeCommand(sql, connection);
+            command.ExecuteReader();
         }
     }
 }
